@@ -31,6 +31,13 @@ controls:
     deadline: "2025-06-31"
     minimum_version: "18.2"
 team_settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://example.org/webhook_handler
+      host_batch_size: 0
+      policy_ids:
+
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
 software:
